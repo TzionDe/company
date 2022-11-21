@@ -1,5 +1,4 @@
 import './App.css';
-import Company from './Company';
 import Counter from './Counter';
 
 function App() {
