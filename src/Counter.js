@@ -7,12 +7,20 @@ function Counter() {
                 return oldcount+1
             }
         )
-        console.log(count)
+    }
+    function reset(){
+        setCount(
+            function(){
+                return 1
+            }
+        )
     }
     return (
         <div>
             <h1>count is at {count}</h1>
             <button onClick={incr}>Click to add 1 to counter</button>
+            <p/>
+            <button onClick={reset}>Click to reset counter</button>
         </div>
       );
     }
