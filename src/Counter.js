@@ -11,7 +11,7 @@ function Counter() {
     }
     return (
         <div>
-            <p>count is at {count}</p>
+            <h1>count is at {count}</h1>
             <button onClick={incr}>Click to add 1 to counter</button>
         </div>
       );
