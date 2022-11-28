@@ -1,26 +1,27 @@
 import{useState} from"react";
-function Counter() {
+function Counter(props) {
     const [count, setCount] = useState(1)
-    const[delta,setDelta]=useState(1)
+    const{delta}=props
+    const{max_num}=props
 
     function incr(){
         setCount(
             function(oldcount){
-                return oldcount+delta
+                if(oldcount+delta<max_num){
+                    return oldcount+delta
+                }
+                else return 0;
+
             }
         )
     }
     function reset(){
         setCount(0)
     }
-    function handleDelta(e){
-        setDelta(Number(e.target.value))
-    }
 
     return (
         <div>
             <h1>Counter</h1>
-            <input type="number" value={delta} onChange={handleDelta}></input>
             <h3>counter is at {count}</h3>
             <button onClick={incr}>Click to add {delta} to counter</button>
             <p/>
