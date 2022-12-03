@@ -24,7 +24,7 @@ function App() {
       <input type="number" value={delta1} onChange={handleDelta}></input>
       <p>Choose maximum number</p>
       <input type="number" value={max_num} onChange={handleMax}></input>
-      <p>maximum value {max_num_reached}</p>
+      <p>maximum value reached {max_num_reached}</p>
       <Counter delta={delta1} max_num={max_num} getData={getDataFromSon}></Counter>
       <Counter delta={delta1} max_num={max_num} getData={getDataFromSon}></Counter>
     </div>
