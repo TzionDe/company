@@ -5,7 +5,7 @@ import{useState} from"react";
 function App() {
   const[delta1,setDelta]=useState(1)
   const[max_num,setMax]=useState(1)
-  const[max_num_reached,setMaxReach]=useState(1)
+  const[max_num_reached,setMaxReach]=useState(0)
 
 
   function handleMax(e){
